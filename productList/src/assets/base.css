@@ -4,13 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
-  /* color: #fff; */
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  /* background: #0F2027; 
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
 }
