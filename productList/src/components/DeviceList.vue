@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import DeviceItem from './DeviceItem.vue';
+import DeviceItem from './DeviceItem.vue'
 
 import data from '../../public/data/data.json'
 import type { IDevice } from '@/types/types'
@@ -16,7 +16,7 @@ const edit = () => {
 const addNewDevice = () => {
   const newDevice: IDevice = {
     name: `Новое устройство`,
-    nodes: []
+    nodes: [],
   }
 
   devices.value.push(newDevice)
@@ -28,13 +28,13 @@ const deleteDevice = (device: number) => {
 
 const addNewNode = (device: number) => {
   const newNode = {
-    name: `Новый узел`
+    name: `Новый узел`,
   }
 
   devices.value[device].nodes.push(newNode)
 }
 
-const deleteNode = (device: number, node: number) => {  
+const deleteNode = (device: number, node: number) => {
   devices.value[device].nodes.splice(node, 1)
 }
 </script>

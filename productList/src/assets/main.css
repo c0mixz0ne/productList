@@ -1,54 +1,52 @@
 @import './base.css';
 
-.container{
+.container {
   padding: 0 10px;
   margin: 0 auto;
   max-width: 1140px;
 }
 
-.device-list{
+.device-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  .device{
+  .device {
     gap: 5px;
     margin-bottom: 10px;
     display: flex;
     padding: 5px;
-    border:1px solid lightgray;
+    border: 1px solid lightgray;
     border-radius: 4px;
-    &.move{
+    &.move {
       cursor: move;
     }
-    input{
+    input {
       flex-grow: 1;
     }
-    .node-list{
+    .node-list {
       list-style-type: none;
       margin: 0;
       padding: 0;
       flex-grow: 1;
-      .nodes{
+      .nodes {
         list-style-type: none;
         margin: 0;
         padding: 0;
         gap: 5px;
         border-radius: 3px;
-        &.margin-bottom{
-          margin-bottom: 5px;
-        }
-        .node{
+        .node {
           display: flex;
-          &.move{
+          &.move {
             cursor: move;
           }
-          input, button{
-            width:100%;
+          input,
+          button {
+            width: 100%;
           }
         }
       }
 
-      .add-node{
+      .add-node {
         width: 100%;
       }
     }
