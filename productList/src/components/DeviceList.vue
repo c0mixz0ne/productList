@@ -9,7 +9,7 @@ const devices = ref(data.devices as IDevice[])
 const editable = ref(false)
 
 const edit = () => {
-  editable.value = !editable.value
+  editable.value = !editable.value  
 }
 
 const addNewDevice = () => {
@@ -35,10 +35,6 @@ const addNewNode = (device: number) => {
 
 const deleteNode = (device: number, node: number) => {
   devices.value[device].nodes.splice(node, 1)
-}
-
-const save = () => {
-  editable.value = !editable.value
 }
 </script>
 
@@ -66,6 +62,6 @@ const save = () => {
     </ul>
     <button v-if="!editable" @click="edit">Редактировать</button>
     <button v-if="editable" @click="addNewDevice">Добавить устройство</button
-    ><button v-if="editable" @click="save">Сохранить</button>
+    ><button v-if="editable" @click="edit">Сохранить</button>
   </div>
 </template>
